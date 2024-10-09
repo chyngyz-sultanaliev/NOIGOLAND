@@ -1,0 +1,817 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* HEADER */
+#header{
+    padding: 30px 0;
+    border-bottom: 2px solid rgb(228, 224, 224);
+    position: sticky;
+    background: rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(5px);
+    top: 0;
+    z-index: 99;
+}
+.header{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    align-self: center;
+    gap: 60px;
+    a{
+    color: #000000;
+        font-size: 18px;
+        font-weight: 400px;
+    }
+}
+/* HEADER */
+/* HERO */
+#hero{
+    padding: 80px 0;
+
+}
+.hero{
+    display: flex;
+    align-self: flex-start;
+    justify-content:space-between;
+}
+.heroimg{
+    animation: imghero 3s alternate ease-in-out;
+}
+@keyframes imghero{
+ 0%{
+ transform: translateX(-1000px);
+ }
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: texthero 3s alternate ease-in-out;
+
+    h3{
+      font-size: 16px;
+      font-weight: 400;
+      color: #999999;
+    }
+    h1{
+     font-size:50px ;
+     font-weight: 400;
+     line-height: 52px;
+     color:#000000;
+     letter-spacing: 2px;
+    }
+    p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #999999;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+}
+@keyframes texthero{
+    0%{
+        transform: translateX(600px);
+    }
+}
+/* HERO */
+/* CARD POSTS POSTS2 */
+
+.card{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 65px;  
+}
+.card-block{
+    img{
+    transition:.8s;
+ }    
+}
+.card-block:hover img{
+    transform: translateY(-20px);
+}
+.posts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 49px;
+  
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+        button{
+        padding: 15px 20px;
+        width: 250px;
+        height: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.716);
+        font-family: Libre Franklin;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        background: transparent;
+        transition: .8s;
+}
+    button:hover{
+        border: 2px solid rgba(185, 184, 184, 0.716);
+        background:#141414 ;
+        color: white;
+    }
+}
+.posts2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 111px;
+}
+.section-line{
+    color: #E6E6E6;
+    margin: 100px 0;
+}
+.title-posts{
+    
+        margin: 20px 0 ;
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;   
+}
+.card-block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h3{
+      margin: 16px 0 0 0 ;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999999;
+    }
+    h1{
+     font-size:20px ;
+     font-weight: 400;
+     color:#000000;
+     letter-spacing: 2px;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+    }
+}
+/* CARD POSTS POSTS2*/
+/* FOOTER */
+
+#footer{
+    background:#141414;
+    padding: 80px 0;
+    margin: 80px 0 0 0  ;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    h3{
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;
+    }
+    a{
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;  
+    }
+}
+.footer-top{
+    span{
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;
+    }
+    h1{
+    font-size:40px ;
+     font-weight: 600;
+     color:#fff;
+     letter-spacing: 1px;
+    }
+}
+.footer-line{
+    color: #f8f3f3;
+    margin: 10px 0;
+}
+.footer-center{
+    display: flex;
+    align-items:flex-end;
+    gap: 60px;
+}
+.footer-bottom{
+    display: flex;
+    align-items: flex-start;
+    gap: 146px;
+    padding: 40px 0 0 0;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-form{
+    position: relative;
+    input{
+        padding: 10px 25px 10px 15px;
+        font-size: 16px;
+        margin: 0  ;
+        border: none;
+        outline: none;
+        margin: 18px 0;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        padding: 10px 15px 10px 15px;
+        font-size: 16px;
+        border: none;
+        color: #fff;
+        background:black;
+        margin: 18px 0;
+        transition: .8s;
+    }
+    button:hover{
+        background:#fefcfc ;
+        color: black;
+        border-left: 2px solid black;
+    }
+}
+/* FOOTER */
+/* MEDIA */
+@media  (max-width:1451px) {
+    .hero{
+        img{
+          width: 700px;
+          height: 450px;
+        }
+    }
+    .card-block{
+        img{
+            width: 370px;
+            height: 220px;
+        }
+    }
+    .posts{
+        img{
+            width: 250px;
+            height: 150px;
+        }
+    }
+  .posts2{
+    img{
+        width: 500px;
+        height: 300px;
+    }
+  }
+}
+@media  (max-width:1401px) {
+    .hero{
+        img{
+          width: 650px;
+        }
+    }
+    .card-block{
+        img{
+            width: 340px;
+            height: 240px;
+        }
+    }
+    .posts{
+        img{
+            height: 180px;
+        }
+        h1{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 14px;
+
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+}
+@media  (max-width:1301px) {
+    .hero{
+        img{
+          width: 600px;
+          height: 400px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    }
+    .card-block{
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    }
+    .posts{
+        img{
+            width: 230px;
+            height: 160px;
+        }
+    }
+  .posts2{
+    img{
+        width: 483px;
+        height: 300px;
+    }
+  }
+}
+@media  (max-width:1201px) {
+    .hero{
+        img{
+          width: 550px;
+          height: 350px;
+        }
+        h1{
+            font-size: 35px;
+            line-height: 42px;
+
+        }
+        p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+        h3,h4{
+            font-size: 14px;
+        }
+    }
+    .card-block{
+        img{
+            width: 287px;
+            height: 200px;
+        }
+    }
+    .posts{
+        img{
+            width: 210px;
+            height: 150px;
+        }
+        h1{
+            font-size: 15px;
+        }
+        h3{
+            font-size: 14px;
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+  .posts2{
+    img{
+        width: 440px;
+        height: 300px;
+    }
+    h1{
+        font-size: 17px;
+    }
+  }
+}
+@media  (max-width:1101px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hero{
+        img{
+          width: 500px;
+          height: 330px;
+        }
+    }
+    .card-block{
+        img{
+            width: 255px;
+            height: 171px;
+        }
+        h1{
+            font-size: 19px;
+        }
+    }
+    .posts{
+        img{
+            width: 188px;
+            height: 130px;
+        }
+        h1{
+            font-size: 13px;
+        }
+        h3{
+            font-size: 10px;
+             margin: 5px 0 0 0;
+        }
+        h4{
+            font-size: 10px;
+        }
+        .card-block-text{
+            gap: 10px;
+        }
+    }
+  .posts2{
+    img {
+        width: 394px;
+        height: 264px;
+    }
+    h1{
+        font-size: 15px;
+    }
+  }
+}
+@media  (max-width:1001px) {
+    .hero{
+        img{
+          width: 450px;
+          height: 300px;
+        }
+        h1{
+            font-size: 28px;
+            line-height: 30px;
+        }
+        p{
+            font-size: 14px;
+
+        }
+        h3,h4{
+            font-size: 12px;
+
+        }
+    }
+    .card-block{
+        img{
+            width: 370px;
+            height: 220px;
+        }
+        h1{
+        font-size: 20px;
+        }
+    }
+    .posts{
+        img{
+            width: 370px;
+            height: 220px;
+        }
+        h3{
+            margin: 16px 0 0 0 ;
+            font-size: 16px;
+          }
+          h1{
+           font-size:20px ;
+           letter-spacing: 2px;
+          }
+          h4{
+              font-size: 14px;
+          }
+    }
+  .posts2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 600px;
+        height: 400px;
+    }
+    h1{
+        font-size: 20px;
+    }
+  }
+  .footer-bottom {
+    gap: 35px;
+}
+}
+@media  (max-width:901px) {
+    .hero{
+        img{
+          width: 400px;
+          height: 250px;
+        }
+        h1{
+            font-size: 25px;
+            line-height: 25px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        h3,h4{
+            font-size: 10px;
+        }
+    }
+    .card-block{
+        img{
+            width: 328px;
+            height: 220px;
+        }
+        h1{
+        font-size: 20px;
+        }
+    }
+    .posts{
+        img{
+            width: 336px;
+            height: 220px;
+        } 
+    }
+  .posts2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 600px;
+        height: 400px;
+    }
+    h1{
+        font-size: 20px;
+    }
+  }
+  .footer-center {
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0 0 0;
+}
+  .footer-bottom {
+    padding:  0;
+}
+}
+@media  (max-width:801px) {
+    
+    .hero{
+        .hero-text{
+            gap: 10px;
+        }
+        img{
+          width: 330px;
+          height: 230px;
+        }
+        }
+    
+    .card-block{
+        img{
+            width: 283px;
+            height: 200px;
+        }
+      
+    }
+    .posts{
+        img{
+            width: 291px;
+            height: 200px;
+        }
+    }
+    .posts2{
+        img {
+            width: 600px;
+            height: 400px;
+        }
+    }
+}
+@media (max-width:701px) {
+    .hero{
+        img {
+            width: 287px;
+            height: 200px;
+        }
+        h1 {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+    }
+    .card-block {
+        img {
+            width: 238px;
+            height: 169px;
+        }
+        h1{
+            font-size: 16px;
+        }
+        h4,h3{
+            font-size: 12px;
+        }
+}
+.section-line {
+    margin: 60px 0;
+}
+.posts2{
+    img {
+        width: 500px;
+        height: 300px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+}
+@media (max-width:601px) {
+    .header{
+        h1{
+            font-size: 20px;
+        }
+        a{
+            font-size: 16px;
+            
+        }
+    }
+    .header-nav{
+        gap: 30px;
+    }
+    .hero{
+        img {
+            width: 250px;
+            height: 180px;
+        }
+        h1 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        p {
+            font-size: 8px;
+            line-height: 12px;
+        }
+        h3,h4{
+            font-size: 8px;
+        }
+    }
+    .card-block {
+        img {
+            width: 215px;
+            height: 155px;
+        }
+        h1 {
+            font-size: 14px;
+        }
+        h3,h4{
+            font-size: 10px;
+        }
+    }
+    .card,.posts{
+        gap: 20px;
+    }
+    .posts2{
+        img {
+            width: 450px;
+            height: 300px;
+        }
+        h1{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width:501px) {
+    .hero,.card,.posts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto; 
+    }
+    .header-nav{
+        gap: 16px;
+    }
+    .header{
+    
+        h1{
+            font-size: 20px;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+    .hero{
+            img {
+                width: 363px;
+                height: 262px;
+            }
+            h1 {
+                font-size: 32px;
+                line-height: 34px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        h3{
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        h4{
+            font-size: 13px;
+        }
+    }
+    .card-block{
+        img{
+            width: 328px;
+            height: 220px;
+        }
+        h1{
+        font-size: 20px;
+        }
+        h3,h4{
+            font-size: 14px;
+        }
+    }
+    .posts{
+        img{
+            width: 336px;
+            height: 220px;
+        }
+    }
+.posts2{
+    img {
+        width: 362px;
+        height: 250px;
+    }
+    h1{
+        font-size: 13px;
+    }
+    h3,h4{
+        font-size: 11px;
+    }
+    .card-block-text{
+        gap: 10px;
+    }
+}
+#footer {
+    padding: 50px 0;
+    margin: 50px 0 0 0;
+}
+}
+@media (max-width:401px) {
+    #hero {
+        padding: 40px 0;
+    }
+    .header{
+        h1{
+        font-size: 16px;
+        }
+        a{
+        font-size: 13px;
+        }
+    }
+    .hero{
+        img {
+            width: 290px;
+            height:180px;
+        }
+        h1 {
+            font-size: 28px;
+            line-height: 29px;
+        }
+        p {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        h3,h4{
+            font-size: 11px;
+        }
+    }
+    .section-line {
+        margin: 40px 0;
+    }
+    .card-block,.posts2{
+            img{
+                width: 290px;
+                height: 180px;
+            }
+        }
+        .footer {
+            gap: 20px;
+            h1{
+                font-size: 32px;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+}
+/* MEDIA */
